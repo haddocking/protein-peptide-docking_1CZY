@@ -1,6 +1,6 @@
 # Protein-peptide-docking_1CZY
 
-This repository contains all necessary information and scripts to do protein-peptide docking in HADDOCK, using the complex 1CZY as an example, which is the Supplementary Information for paper[reference]. For the usage of these files and scripts, please check the content of the paper[reference]
+This repository contains all necessary information and scripts to do protein-peptide docking in HADDOCK, using the complex 1CZY as an example, which is the Supplementary Information for paper[reference]. For the usage of these files and scripts, please check the content of the paper[reference]. 
 
 *Note that the provided scripts are in principle generic and can be used for other systems as well.*
 
@@ -15,7 +15,7 @@ This repository contains following folders and files:
   - peptide_extended.pdb, the extended conformation of peptide.
   - protein_active_residues.dat, the list of active residues of protein.
   - peptide_passive_residues.dat, the list of passive residues of peptide.
-  - protein_histidine_states.dat, the list of charged states of histidines in protein.
+  - protein_histidine_states.dat, the list of charged states of Histidines in protein.
   - structures.list, the list of 33 conformations or structures of peptide used for docking.
 
   ### MD_conformations
