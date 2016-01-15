@@ -3,6 +3,8 @@
 ## About Protein-peptide-docking_1CZY
 This repository contains all necessary information and scripts to do protein-peptide docking in HADDOCK, using the complex 1CZY as an example, which is the Supplementary Information for paper[reference]. For the usage of these files and scripts, please check the content of the paper[reference]
 
+*Note that the provided scripts are in principle generic and can be used for other systems as well.*
+
 This repository contains following folders and files:
 
 # pdb_files
