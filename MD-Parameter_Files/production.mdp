@@ -1,0 +1,52 @@
+; RUN CONTROL PARAMETERS
+integrator               = md    ; Leap-Frog Integrator
+tinit			 = 0	 ; Starting time in ps
+dt                       = 0.002 ; Time step in ps
+nsteps                   = 25000000 ; 50 ns 
+
+; OUTPUT CONTROL OPTIONS
+nstxout                  = 500000 ; Writing full precision coordinates every 1 nanosecond
+nstvout                  = 500000 ; Writing velocities every 1 nanosecond
+nstlog                   = 25000  ; Writing to the log file every 50ps
+nstenergy                = 25000  ; Writing out energy information every 50ps
+nstxtcout                = 25000  ; Writing coordinates every 50ps
+energygrps               = Protein Non-Protein
+
+; NEIGHBORSEARCHING PARAMETERS
+cutoff-scheme		 = Verlet
+nstlist                  = 20
+ns-type                  = Grid
+pbc                      = xyz
+rlist                    = 1.0
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+coulombtype              = PME
+pme-order		 = 4		; cubic interpolation
+fourierspacing		 = 0.16		; grid spacing for FFT
+rcoulomb                 = 1.0
+vdw-type                 = Cut-off
+rvdw                     = 1.0
+
+; Temperature coupling  
+Tcoupl                   = v-rescale
+tc-grps                  = Protein  Non-Protein
+tau-t                    = 0.1      0.1
+ref-t                    = 310      310
+
+; Pressure coupling     
+Pcoupl                   = Berendsen
+Pcoupltype               = Isotropic
+tau-p                    = 2.0
+compressibility          = 4.5e-5
+ref-p                    = 1.0
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen-vel                  = no
+
+; OPTIONS FOR BONDS    
+constraints              = all-bonds
+constraint-algorithm     = lincs
+continuation	         = yes		; Restarting after NPT without position restraints
+lincs-order              = 4
+lincs-iter               = 1
+lincs-warnangle          = 30

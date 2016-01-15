@@ -1,0 +1,4 @@
+## Executing Reduce to assign histidine protonation states
+## Input PDB: protein.pdb
+HIS ( 73 )	-->	HISD
+HIS ( 109 )	-->	HISE
