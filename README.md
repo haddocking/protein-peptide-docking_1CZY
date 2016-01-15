@@ -18,7 +18,7 @@ This repository contains following folders and files:
   - protein_histidine_states.dat, the list of charged states of histidines in protein.
   - structures.list, the list of 33 conformations or structures of peptide used for docking.
 
-  # MD_conformations
+  ### MD_conformations
     - md_1.pdb ... md_30.pdb, the 30 structures of peptide from MD simulations.
 
 
